@@ -17,5 +17,23 @@
         "eth2": { "role": "disabled" }
       }
     }
+  },
+  "system": {
+    "static-host-mapping": {
+      "host-name": {
+        "pihole.lan": {
+          "alias": [ "pihole" ],
+          "inet": [ "192.168.1.2" ]
+        },
+        "homeassistant.lan": {
+          "alias": [ "homeassistant" ],
+          "inet": [ "192.168.1.2" ]
+        },
+        "cloudflared.lan": {
+          "alias": [ "cloudflared" ],
+          "inet": [ "192.168.1.2" ]
+        }
+      }
+    }
   }
 }
