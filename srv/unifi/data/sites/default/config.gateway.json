@@ -18,6 +18,16 @@
       }
     }
   },
+  "service":{
+    "mdns":{
+      "repeater":{
+        "interface":[
+          "eth1.10",
+          "eth1.107"
+        ]
+      }
+    }
+  },
   "system": {
     "static-host-mapping": {
       "host-name": {
@@ -31,6 +41,10 @@
         },
         "cloudflared.lan": {
           "alias": [ "cloudflared" ],
+          "inet": [ "192.168.1.2" ]
+        },
+        "unifi-controller.lan": {
+          "alias": [ "unifi-controller" ],
           "inet": [ "192.168.1.2" ]
         }
       }
